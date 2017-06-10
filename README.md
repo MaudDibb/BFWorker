@@ -2,8 +2,10 @@
 run brainfsck code in a worker thread in your browser, see the output in realtime at full speed
 
 this is mostly an expirement in learning a few things:
-   how to run code in a webworker
-   learning a bit of functional programming
+<ul>
+<li>how to run code in a webworker</li>
+<li>learning a bit of functional programming</li>
+</ul>
 
 runner.js has all the code that transpiles brainfuck code into javascript, and runs it directly in the webworker thread.
 the text output is buffered so on every newline, a line is sent back to the calling page (bfworker.html in this case)
