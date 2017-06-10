@@ -1,0 +1,79 @@
+html,body {
+	margin:0; 
+	padding:0; 
+	width:100%; 
+	height:100%;
+	background:#111;
+}
+
+.top {
+	position:absolute;
+	margin:auto;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	width:800px;
+	height:480px;
+}
+.top textarea {
+	width:800px;
+	height:480px;
+	background:#000;
+	border:0px none;
+	color:#d80;
+	font:15px monospace;
+}
+.top textarea:focus {
+	outline-style: none;
+}
+.bottom {
+	background:#000;
+	position:absolute;
+	height:30px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+}
+input[type='button'] {
+	background:#020;
+	color:#aa0;
+	border:1px solid #090;
+	margin-top:5px;
+	margin-left:10px;
+	cursor: pointer;
+}
+input[type='button']:hover {
+	background:#000;
+	border:1px solid #5f5;
+}
+input[type='button']:focus {
+	outline-style: none;
+}
+.output {
+	position:absolute;
+	margin:auto;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:650px;
+	height:480px;
+	z-index:10;
+	border:1px solid #999;
+}
+.output > pre {
+	overflow-y:auto;
+	width:650px;
+	height:480px;
+	font:9px monospace;
+	background:#444;
+	color:#fa0;
+	margin:0;
+}
+.output button {
+	background:#222;
+	border:1px solid #999;
+	color:#fa0;
+	border-radius:5px;
+}
