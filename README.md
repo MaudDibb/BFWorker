@@ -26,8 +26,10 @@ to the end of the while loop</li>
 </ul>
 
 <p>for some reason, unoptimized code runs faster in my browser than the optimized code does. Im guessing the v8
-runtime in chrome is the culprit, it actually does a better job optimizing the code than i could do with all the optimization
-techniques explained above. thats why theres 2 run buttons. im betting that wouldnt be the case if i could emit proper
+runtime in chrome is the culprit, it actually does a better job optimizing the raw code than I could do with all the optimization
+techniques explained above. Thats why theres 2 run buttons. im betting that wouldnt be the case if i could emit proper
 x86 machine code with the above techniques...something i'll try later ;)</p>
 
 <p>i might try a web assembly version of this as well. grokking that spec is not trivial ;)</p>
+
+<p>Edit: V8 is truly a beast now. It turn out it does 2 passes on js code. First pass does a simple js->native code conversion to get the code started...then it really kicks in and optimizes the bejesus out of it..again in native code. This new code runs as close to true cpu speed as you could get. I'll have to study the new optimizers and see if there is anything I could write that would work better. So far..not happening.<p>
